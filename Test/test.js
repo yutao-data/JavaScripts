@@ -19,3 +19,33 @@ alert(beatles); */
 
 /* var beatles = Array("John","paul","George","Ringo");
 alert(beatles); */
+
+/* alert("10"+20);
+alert(10+20); */
+
+
+/* if(1>2){
+    alert("The World get mad");
+}else{
+    alert("All is well in this world");
+} */
+
+/* var my_mood = "happy";
+var your_mood = "sad";
+if(my_mood == your_mood){
+    alert("our mood are the same");
+}
+if(my_mood != your_mood){
+    alert("I am happier than you");
+} */
+
+
+var a = false;
+var b = "";
+if(a === b){
+    alert("a equals to b");
+}else{
+    alert("a != b");
+}
+
+
