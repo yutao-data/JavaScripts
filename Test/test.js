@@ -137,6 +137,33 @@ var total = 50;
 var number = square(20);
 alert(total); */
 
+/* alert(document.getElementsByTagName("li").length);
+
+for(var i=0;i<document.getElementsByTagName("li").length;i++){
+    alert(typeof document.getElementsByTagName("li")[i]);
+} */
+
+/* var shopping = document.getElementById("purchase");
+var sales = shopping.getElementsByClassName("sale");
+alert(sales.length); */
+
+
+function getElementByClassName(node,classname){
+    if(node.getElementByclassName){
+        //使用现有方法
+        return node.getElementByClassName(classname);
+    }else{
+        var results = new Array();
+        var elems = node.getElementByTagName("*");
+        for(var i=0; i<elems.length;i++){
+            if(elems[i].className.indexOf(classname)!=-1){
+                results[results.length] = elems[i];
+            }
+        }
+        return results;
+    }
+}
+
 
 
 

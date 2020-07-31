@@ -2,9 +2,38 @@
  <html lang="en">
      <head>
          <meta charset="utf-8"/>
-         <title>Just a test</title>
+         <title>Shopping list</title>
+         <style>
+             .selector{
+                 property:valur;
+             }
+             .p{
+                 color:yellow;
+                 font-family:"arial",sans-serif;
+                 font-size:1.2em;
+             }
+             .body{
+                 color:white;
+                 background-color: black;
+             }
+             #purchase{
+                border: 1px solid white;
+                background-color: #333;
+                color:#ccc;
+                padding:1em;
+             }
+         </style>
      </head>
-     <body>
+     <body class="body">
+         <h1>What to buy</h1>
+         <p title="a gentle reminder" class="p">Don't forget to buy this stuff.</p>
+         <ul id="purchase">
+             <li>A tin of beans</li>
+             <li class="sale">Cheese</li>
+             <li class="sale important">Milk</li>
+         </ul>
          <script src="test.js"></script>
      </body>
  </html>
+
+ 
