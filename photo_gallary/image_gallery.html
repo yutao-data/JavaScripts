@@ -1,12 +1,15 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Image Gallery</title>
+    <style>
+	    @import url(css/layout.css);
+    </style>
   </head>
   <body>
     <h1>Snapshots</h1>
-    <u1>
+    <u1 id="imagegallery">
       <li>
         <a href="images/fireworks.jpg" title="A fireworks display" onclick = "showPic(this); return false;">Fireworks</a>
       </li>
@@ -23,6 +26,5 @@
     <img id="placeholder" src="images/placeholder.jpg" alt="my image gallery"/>
     <p id="description">Choose an image.</p>
     <script type="text/javascript" src="scripts/showPic.js"></script>
-    <script>addLoadEvent(prepareGallery);</script>
   </body>
 </html>
